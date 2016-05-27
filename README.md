@@ -1,6 +1,11 @@
 # Swetest
 
 [![Build Status](https://travis-ci.org/DarkSide666/swetest.svg?branch=master)](https://travis-ci.org/DarkSide666/swetest)
+[![Latest Stable](https://poser.pugx.org/DarkSide666/swetest/version)](https://packagist.org/packages/DarkSide666/swetest)
+[![Total Downloads](https://poser.pugx.org/DarkSide666/swetest/downloads.png)](https://packagist.org/packages/DarkSide666/swetest)
+![DailyDownloads](https://img.shields.io/packagist/dd/DarkSide666/swetest.svg)
+[![PHP 7 ready](http://php7ready.timesplinter.ch/DarkSide666/swetest/badge.svg)](https://travis-ci.org/DarkSide666/swetest)
+
 
 *Based on https://github.com/DestinyLab/swetest*, compatible with Windows server.
 
