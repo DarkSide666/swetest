@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/DarkSide666/swetest.svg?branch=master)](https://travis-ci.org/DarkSide666/swetest)
 
-*Based on https://github.com/DestinyLab/swetest*
+*Based on https://github.com/DestinyLab/swetest*, compatible with Windows server.
 
 Swetest is the simple wrapper of swisseph library's swetest.
 
