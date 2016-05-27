@@ -1,0 +1,23 @@
+{
+    "name": "destinylab/swetest",
+    "description": "The simple wrapper of swisseph library's swetest",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lance He",
+            "email": "indigofeather@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "require-dev": {
+        "codeception/codeception": "2.0.12"
+    },
+    "autoload": {
+        "psr-4": {
+            "DestinyLab\\": "src/"
+        }
+    }
+}
