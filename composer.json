@@ -6,6 +6,9 @@
         {
             "name": "Lance He",
             "email": "indigofeather@gmail.com"
+        },
+        {
+            "name": "DarkSide"
         }
     ],
     "minimum-stability": "dev",
