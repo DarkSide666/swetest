@@ -1,5 +1,5 @@
 {
-    "name": "destinylab/swetest",
+    "name": "darkside666/swetest",
     "description": "The simple wrapper of swisseph library's swetest",
     "license": "MIT",
     "authors": [
@@ -17,7 +17,7 @@
     },
     "autoload": {
         "psr-4": {
-            "DestinyLab\\": "src/"
+            "DarkSide666\\": "src/"
         }
     }
 }

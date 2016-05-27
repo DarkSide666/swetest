@@ -1,15 +1,15 @@
 <?php
 
 /**
- * This file is part of DestinyLab.
+ * This file is part of DarkSide666.
  */
 
-namespace DestinyLab;
+namespace DarkSide666;
 
 /**
  * Swetest
  *
- * @package DestinyLab
+ * @package DarkSide666
  * @author  Lance He <indigofeather@gmail.com>
  */
 class Swetest

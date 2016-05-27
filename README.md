@@ -1,6 +1,6 @@
 # Swetest
 
-[![Build Status](https://travis-ci.org/DestinyLab/swetest.svg?branch=master)](https://travis-ci.org/DestinyLab/swetest)
+[![Build Status](https://travis-ci.org/DarkSide666/swetest.svg?branch=master)](https://travis-ci.org/DarkSide666/swetest)
 
 *Based on https://github.com/DestinyLab/swetest*
 
@@ -24,7 +24,7 @@ Next, update your project's composer.json file to include Swetest:
 ```json
 {
     "require": {
-        "destinylab/swetest": "dev-master"
+        "darkside666/swetest": "dev-master"
     }
 }
 ```
@@ -36,7 +36,7 @@ Next, update your project's composer.json file to include Swetest:
 
 require_once 'vendor/autoload.php';
 
-use DestinyLab\Swetest;
+use DarkSide666\Swetest;
 $swetest = new Swetest();
 
 // ephemeris of Mercury (-p2) starting on 1 Dec 1900,
@@ -114,7 +114,7 @@ Changing the swetest file's path:
 
 require_once 'vendor/autoload.php';
 
-use DestinyLab\Swetest;
+use DarkSide666\Swetest;
 
 // method 1
 $swetest = new Swetest('/path/to/swetest');
