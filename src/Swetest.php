@@ -11,10 +11,11 @@ namespace DarkSide666;
  *
  * @package DarkSide666
  * @author  Lance He <indigofeather@gmail.com>
+ * @author  DarkSide
  */
 class Swetest
 {
-    protected $path = null;
+    protected $path = null; // defaults to __DIR__.'/../resources/'
     protected $query = null;
     protected $output = [];
     protected $status = null;
@@ -28,7 +29,7 @@ class Swetest
      */
     public function __construct($path = null)
     {
-        // default path
+        // default path and executable
         $path === null and $path = __DIR__.'/../resources/';
         $this->setPath($path);
     }
@@ -40,7 +41,7 @@ class Swetest
     public function query($query)
     {
         is_array($query) and $query = $this->compile($query);
-        $this->query = $this->getPath().'swetest -edir'.$this->getPath().' '.$query;
+        $this->query = $this->getPath().$this->getExecutable().' -edir'.$this->getPath().' '.$query;
 
         return $this;
     }
@@ -74,13 +75,21 @@ class Swetest
      */
     public function setPath($path)
     {
-        if (is_dir($path) and is_file($path.'swetest')) {
+        if (is_dir($path) and is_file($path.$this->getExecutable())) {
             $this->path = $path;
         } else {
             throw new SwetestException('Invalid path!');
         }
 
         return $this;
+    }
+
+    /**
+     * @return string
+     */
+    protected function getExecutable()
+    {
+        return strtoupper(substr(PHP_OS,0,3)) === 'WIN' ? 'swetest.exe' : 'swetest';
     }
 
     /**
