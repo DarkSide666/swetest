@@ -7,6 +7,9 @@ php:
   - 7.0
   - hhvm
 
+install:
+  - chmod +x ./resources/swetest
+
 before_script:
   - composer install
 
