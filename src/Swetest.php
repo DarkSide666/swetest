@@ -30,7 +30,7 @@ class Swetest
     public function __construct($path = null)
     {
         // default path and executable
-        $path === null and $path = __DIR__.'/../resources/';
+        $path === null and $path = realpath(__DIR__.'/../resources/') . '/';
         $this->setPath($path);
     }
 
