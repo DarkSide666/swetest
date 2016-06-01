@@ -1,11 +1,10 @@
 <?php
-
-use DarkSide666\Swetest;
+use DarkSide666\Swetest\Swetest;
 
 class SwetestTest extends \Codeception\TestCase\Test
 {
     /**
-     * @var DarkSide666\Swetest
+     * @var DarkSide666\Swetest\Swetest
      */
     private $swetest;
 
@@ -16,16 +15,16 @@ class SwetestTest extends \Codeception\TestCase\Test
 
     public function testConstruct()
     {
-        $this->assertInstanceOf("DarkSide666\\Swetest", $this->swetest);
+        $this->assertInstanceOf("DarkSide666\\Swetest\\Swetest", $this->swetest);
     }
 
     public function testSetPath()
     {
-        $this->assertInstanceOf("DarkSide666\\Swetest", $this->swetest->setPath(__DIR__.'/../../resources/'));
+        $this->assertInstanceOf("DarkSide666\\Swetest\\Swetest", $this->swetest->setPath(__DIR__.'/../../resources/'));
     }
 
     /**
-     * @expectedException DarkSide666\SwetestException
+     * @expectedException DarkSide666\Swetest\SwetestException
      */
     public function testSetInvalidPath()
     {
@@ -39,12 +38,12 @@ class SwetestTest extends \Codeception\TestCase\Test
 
     public function testSetMaskPath()
     {
-        $this->assertInstanceOf("DarkSide666\\Swetest", $this->swetest->setMaskPath(true));
+        $this->assertInstanceOf("DarkSide666\\Swetest\\Swetest", $this->swetest->setMaskPath(true));
     }
 
     public function testStringQuery()
     {
-        $this->assertInstanceOf("DarkSide666\\Swetest", $this->swetest->query('-h'));
+        $this->assertInstanceOf("DarkSide666\\Swetest\\Swetest", $this->swetest->query('-h'));
     }
 
     public function testArrayQuery()
@@ -52,7 +51,7 @@ class SwetestTest extends \Codeception\TestCase\Test
         $query = [
             'h'
         ];
-        $this->assertInstanceOf("DarkSide666\\Swetest", $this->swetest->query($query));
+        $this->assertInstanceOf("DarkSide666\\Swetest\\Swetest", $this->swetest->query($query));
     }
 
     public function queryProvider()
@@ -88,7 +87,7 @@ class SwetestTest extends \Codeception\TestCase\Test
     }
 
     /**
-     * @expectedException DarkSide666\SwetestException
+     * @expectedException DarkSide666\Swetest\SwetestException
      */
     public function testErrorExecute()
     {
@@ -102,7 +101,7 @@ class SwetestTest extends \Codeception\TestCase\Test
     }
 
     /**
-     * @expectedException DarkSide666\SwetestException
+     * @expectedException DarkSide666\Swetest\SwetestException
      */
     public function testErrorResponse()
     {
@@ -110,7 +109,7 @@ class SwetestTest extends \Codeception\TestCase\Test
     }
 
     /**
-     * @expectedException DarkSide666\SwetestException
+     * @expectedException DarkSide666\Swetest\SwetestException
      */
     public function testErrorGetStatus()
     {
@@ -119,7 +118,7 @@ class SwetestTest extends \Codeception\TestCase\Test
 
 
     /**
-     * @expectedException DarkSide666\SwetestException
+     * @expectedException DarkSide666\Swetest\SwetestException
      */
     public function testErrorGetOutput()
     {

@@ -20,7 +20,7 @@
     },
     "autoload": {
         "psr-4": {
-            "DarkSide666\\": "src/"
+            "DarkSide666\\Swetest\\": "src/"
         }
     }
 }

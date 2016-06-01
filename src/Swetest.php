@@ -1,15 +1,10 @@
 <?php
-
-/**
- * This file is part of DarkSide666.
- */
-
-namespace DarkSide666;
+namespace DarkSide666\Swetest;
 
 /**
  * Swetest
  *
- * @package DarkSide666
+ * @package DarkSide666\Swetest
  * @author  Lance He <indigofeather@gmail.com>
  * @author  DarkSide
  */
