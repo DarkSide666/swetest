@@ -70,10 +70,10 @@ class Swetest
      */
     public function setPath($path)
     {
-        if (is_dir($path) and is_file($path.$this->getExecutable())) {
+        if (is_dir($path) and is_executable($path.$this->getExecutable())) {
             $this->path = $path;
         } else {
-            throw new SwetestException('Invalid path!');
+            throw new SwetestException('Invalid path to swetest command or it is not executable !');
         }
 
         return $this;
